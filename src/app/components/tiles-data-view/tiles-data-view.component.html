@@ -1,0 +1,43 @@
+<div class="tiles-view">
+    <p-dataView #dv [value]="actions" filterBy="name" [sortField]="sortField" [sortOrder]="sortOrder" layout="grid">
+        <p-header>
+            <div class="ui-helper-clearfix">
+                <div class="p-grid">
+                    <div class="p-col-12 p-md-4">
+                        <span>Service Requests</span>
+                    </div>
+                    <div class="p-col-6 p-md-4 filter-container">
+                        <p-dropdown [options]="sortOptions" [(ngModel)]="sortKey" placeholder="Categories"
+                            (onChange)="onSortChange($event)" [style]="{'min-width':'140px'}"></p-dropdown>
+                    </div>
+                    <div class="p-col-6 p-md-4" class="ui-inputgroup">
+                        <span class="ui-inputgroup-addon"><i class="pi pi-search"></i></span>
+                        <input type="search" pInputText placeholder="Search" (input)="dv.filter($event.target.value)">
+                    </div>
+                </div>
+            </div>
+        </p-header>
+        <ng-template let-action pTemplate="gridItem">
+            <div style="padding:.5em" class="p-col-12 p-md-3 action-container">
+                <a (click)="selectAction($event, action)" routerLink="./">
+                    <p-card>
+                        <div class="action-items">
+                            <img src="./../../../assets/images/{{action.image}}" />
+                            <div class="action-name">{{action.name}}</div>
+                        </div>
+                    </p-card>
+                </a>
+            </div>
+        </ng-template>
+    </p-dataView>
+</div>
+
+<p-dialog header="Action details" [(visible)]="displayDialog" [minY]="70" showEffect="fade" [modal]="true"
+    [style]="{width: '500px'}" (onAfterHide)="onDialogHide()" [contentStyle]="{padding: '2em', textAlign: 'center'}">
+    <div *ngIf="selectedAction">
+        <div class="action-items">
+            <img src="./../../../assets/images/{{selectedAction.image}}" />
+            <div class="font-weight-bold">{{selectedAction.id}} - {{selectedAction.name}}</div>
+        </div>
+    </div>
+</p-dialog>

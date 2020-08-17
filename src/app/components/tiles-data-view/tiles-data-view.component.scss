@@ -1,0 +1,28 @@
+.tiles-view {
+    padding: 10px;
+}
+
+.action-container {
+    a {
+        text-decoration: none;
+    }
+
+    .action-items {
+        text-align: center;
+
+        img {
+            width: 50%;
+        }
+
+        .action-name {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+.p-grid {
+    .ui-inputgroup {
+        align-items: center;
+    }
+}
