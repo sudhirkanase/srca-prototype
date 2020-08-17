@@ -2,27 +2,27 @@
     <p-dataView #dv [value]="actions" filterBy="name" [sortField]="sortField" [sortOrder]="sortOrder" layout="grid">
         <p-header>
             <div class="ui-helper-clearfix">
-                <div class="p-grid">
-                    <div class="p-col-12 p-md-4">
-                        <span>Service Requests</span>
+                <div class="col-md-12 p-grid header-container">
+                    <div class="col-md-4 sub-container-1">
+                        <span style="font-size: 16px;">Service Requests</span>
                     </div>
-                    <div class="p-col-6 p-md-4 filter-container">
-                        <p-dropdown [options]="sortOptions" [(ngModel)]="sortKey" placeholder="Categories"
+                    <div class="col-md-4 filter-container sub-container-2">
+                        <p-dropdown [options]="sortOptions" [(ngModel)]="sortKey" placeholder="All Categories"
                             (onChange)="onSortChange($event)" [style]="{'min-width':'140px'}"></p-dropdown>
                     </div>
-                    <div class="p-col-6 p-md-4" class="ui-inputgroup">
+                    <div class="col-md-4 ui-inputgroup">
                         <span class="ui-inputgroup-addon"><i class="pi pi-search"></i></span>
-                        <input type="search" pInputText placeholder="Search" (input)="dv.filter($event.target.value)">
+                        <input type="search" pInputText placeholder="Search" (input)="dv.filter($event.target.value)" class="input-wid">
                     </div>
                 </div>
             </div>
         </p-header>
         <ng-template let-action pTemplate="gridItem">
-            <div style="padding:.5em" class="p-col-12 p-md-3 action-container">
+            <div style="padding:.5em" class="col-md-3 action-container">
                 <a (click)="selectAction($event, action)" routerLink="./">
                     <p-card>
                         <div class="action-items">
-                            <img src="./../../../assets/images/{{action.image}}" />
+                            <img src="./../../../assets/images/{{action.image}}"/>
                             <div class="action-name">{{action.name}}</div>
                         </div>
                     </p-card>
@@ -36,7 +36,7 @@
     [style]="{width: '500px'}" (onAfterHide)="onDialogHide()" [contentStyle]="{padding: '2em', textAlign: 'center'}">
     <div *ngIf="selectedAction">
         <div class="action-items">
-            <img src="./../../../assets/images/{{selectedAction.image}}" />
+            <img src="./../../../assets/images/{{selectedAction.image}}" style="width: 200px; height: 200px;"/>
             <div class="font-weight-bold">{{selectedAction.id}} - {{selectedAction.name}}</div>
         </div>
     </div>

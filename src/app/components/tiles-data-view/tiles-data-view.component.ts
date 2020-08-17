@@ -33,105 +33,92 @@ export class TilesDataViewComponent implements OnInit {
         name: 'Account Maintenance',
         account: true,
         route: 'acct-maintenance',
-        image: 'image-1.jpg'
+        image: 'group.png'
       },
       {
         id: 2,
         name: 'Acct Review Maintenance',
         account: true,
         route: 'acct-review-maintenance',
-        image: 'image-2.png'
+        image: 'sync.png'
       },
       {
         id: 3,
         name: 'Asset Transaction',
         account: true,
         route: 'asset-transaction',
-        image: 'image-3.jpg'
+        image: 'share.png'
       },
       {
         id: 4,
         name: 'Contact Center',
         account: false,
         route: 'contact-center',
-        image: 'image-4.png'
+        image: 'dashboard.png'
       },
       {
         id: 5,
         name: 'DARS Approval',
         account: true,
         route: 'dars-approval',
-        image: 'image-1.jpg'
+        image: 'feather.png'
       },
       {
         id: 6,
-        name: 'Name & Address Record',
-        account: false,
-        route: 'acct-maintenance',
-        image: 'image-2.png'
+        name: 'DARS Approval',
+        account: true,
+        route: 'dars-approval',
+        image: 'feather.png'
       },
       {
         id: 7,
-        name: 'AD Fixed Income',
+        name: 'Name & Address Record',
         account: false,
-        route: 'ad-fixed-income',
-        image: 'image-3.jpg'
+        route: 'acct-maintenance',
+        image: 'cloud-computing.png'
       },
       {
         id: 8,
-        name: 'Add acct: AD Asset',
-        account: true,
-        route: 'add-acct-ad-asset',
-        image: 'image-4.png'
+        name: 'AD Fixed Income',
+        account: false,
+        route: 'ad-fixed-income',
+        image: 'up-arrow.png'
       },
       {
         id: 9,
-        name: 'Management',
-        account: false,
-        route: 'management',
-        image: 'image-1.jpg'
+        name: 'Initial Account Maintenance',
+        account: true,
+        route: 'initial-account-maintenance',
+        image: 'document.png'
       },
       {
         id: 10,
-        name: 'AD Capital Gains',
+        name: 'Add acct: AD Asset',
         account: true,
-        route: 'ad-capital-gains',
-        image: 'image-2.png'
+        route: 'add-acct-ad-asset',
+        image: 'add-group.png'
       },
       {
         id: 11,
-        name: 'Tolerance',
+        name: 'Management',
         account: false,
-        route: 'tolerance',
-        image: 'image-3.jpg'
+        route: 'management',
+        image: 'ui.png'
       },
       {
         id: 12,
-        name: 'AD Change Restriction',
+        name: 'AD Capital Gains',
         account: true,
-        route: 'ad-change-restriction',
-        image: 'image-4.png'
+        route: 'ad-capital-gains',
+        image: 'mail.png'
       },
       {
         id: 13,
-        name: 'AD Invest Cash',
-        account: true,
-        route: 'ad-invest-cash',
-        image: 'image-1.jpg'
-      }, {
-        id: 14,
-        name: 'AD Other Investments',
-        account: true,
-        route: 'ad-other-investments',
-        image: 'image-2.png'
-      },
-      {
-        id: 15,
-        name: 'AD Other Portfolio',
-        account: true,
-        route: 'ad-other-portfolio',
-        image: 'image-3.jpg'
-      },
+        name: 'Tolerance',
+        account: false,
+        route: 'tolerance',
+        image: 'cloud.png'
+      }
     ];
 
     this.sortOptions = [
