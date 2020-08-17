@@ -3,6 +3,7 @@
 }
 
 .action-container {
+    max-width: 20% !important;
     a {
         text-decoration: none;
     }
@@ -16,7 +17,7 @@
 
         .action-name {
             font-weight: 700;
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 }
@@ -25,4 +26,13 @@
     .ui-inputgroup {
         align-items: center;
     }
+}
+.header-container{
+    padding-top: 10px;
+    .sub-container-1{
+        padding-top: 5px;
+    }
+}
+.input-wid{
+    width:316px;
 }
