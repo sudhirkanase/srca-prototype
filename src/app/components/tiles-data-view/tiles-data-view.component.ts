@@ -89,7 +89,7 @@ export class TilesDataViewComponent implements OnInit {
         name: 'Initial Account Maintenance',
         account: true,
         route: 'initial-account-maintenance',
-        image: 'document.png'
+        image: 'report.png'
       },
       {
         id: 10,
@@ -110,7 +110,7 @@ export class TilesDataViewComponent implements OnInit {
         name: 'AD Capital Gains',
         account: true,
         route: 'ad-capital-gains',
-        image: 'mail.png'
+        image: 'money.png'
       },
       {
         id: 13,
