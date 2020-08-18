@@ -18,6 +18,7 @@
         .action-name {
             font-weight: 700;
             font-size: 16px;
+            white-space: nowrap;
         }
     }
 }
@@ -31,6 +32,11 @@
     padding-top: 10px;
     .sub-container-1{
         padding-top: 5px;
+        padding-left: 0px !important;
+    }
+    .service-header{
+        font-size: 16px;
+        margin-left: 8px;
     }
 }
 .input-wid{
